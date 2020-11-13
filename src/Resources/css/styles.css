@@ -28,7 +28,7 @@ a {
 }
 
 .bck_b_light {
-  background: #999592;
+  background: #757575;
 }
 
 .bck_b_dark {
@@ -49,12 +49,18 @@ a {
 
 .load_more_container span {
   cursor: pointer;
-  background: #2196f3;
+  background: #9e9e9e;
   color: #ffffff;
-  font-size: 27px;
+  border-radius: 8px;
+  font-size: 22px;
   padding: 10px 60px;
   display: table;
   margin: 0 auto;
+}
+
+.load_more_container span:hover {
+  background-color: #424242;
+  color: #f5f5f5;
 }
 
 .no_result {
@@ -95,7 +101,7 @@ tr:nth-child(even) {
 }
 
 /*============================
-            FORM
+ FORM
 ==============================*/
 
 input {
@@ -180,7 +186,7 @@ select {
 }
 
 /*============================
-            BUTTONS
+BUTTONS
 ==============================*/
 .link_default {
   text-transform: uppercase;
@@ -188,6 +194,25 @@ select {
   display: table;
   background: #e1ddc3;
   margin-top: 10px;
+}
+
+.reset-btn:hover,
+.login-btn:hover,
+.link_default:hover,
+.create-btn:hover,
+.addproduct-btn:hover {
+  background-color: #424242;
+  color: #f5f5f5;
+}
+
+.reset-btn,
+.login-btn,
+.create-btn,
+.addproduct-btn {
+  border: 1px #616161 solid;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  color: #424242;
 }
 
 .card_link,
@@ -229,7 +254,7 @@ select {
 }
 
 /*============================
-        PAGE TOP
+  PAGE TOP
 ==============================*/
 
 .page_top {
@@ -239,7 +264,7 @@ select {
 }
 
 /*============================
-            HEADER
+ HEADER
 ==============================*/
 header {
   position: fixed;
@@ -283,7 +308,7 @@ header .container .right .bottom {
 }
 
 header .container .right .top {
-  color: #c9c9c9;
+  color: #bdbdbd;
   border-bottom: 1px solid #ffffff;
 }
 
@@ -309,7 +334,7 @@ header .log_out_link {
 }
 
 /*============================
-            FOOTER
+ FOOTER
 ==============================*/
 
 footer .logo {
@@ -352,7 +377,7 @@ footer .business_nfo .nfo {
 }
 
 /*============================
-        FEATURED IMAGE
+  FEATURED IMAGE
 ==============================*/
 
 .featured_container .featured_image {
@@ -387,7 +412,7 @@ footer .business_nfo .nfo {
 }
 
 /*============================
-        FEATURED PROMOTION
+FEATURED PROMOTION
 ==============================*/
 
 .home_promotion .home_promotion_img {
@@ -445,7 +470,7 @@ footer .business_nfo .nfo {
 }
 
 /*============================
-        CARD ITEM
+ CARD ITEM
 ==============================*/
 
 .card_item_wrapper {
@@ -484,7 +509,7 @@ footer .business_nfo .nfo {
 }
 
 .card_item_wrapper .tags .name {
-  font-size: 21px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -551,7 +576,7 @@ footer .business_nfo .nfo {
 }
 
 /*============================
-        SHOP
+ SHOP
 ==============================*/
 
 .shop_wrapper {
@@ -587,7 +612,7 @@ footer .business_nfo .nfo {
 }
 
 /*============================
-        PRODUCT DETAIL
+ PRODUCT DETAIL
 ==============================*/
 
 .product_detail_wrapper {
@@ -705,7 +730,7 @@ footer .business_nfo .nfo {
 }
 
 /*=============================
-         REGISTER LOGIN
+REGISTER LOGIN
 ===============================*/
 
 .register_login_container {
@@ -737,7 +762,7 @@ footer .business_nfo .nfo {
 }
 
 /*=============================
-         USER
+ USER
 ===============================*/
 
 .user_container {
@@ -817,7 +842,7 @@ footer .business_nfo .nfo {
 }
 
 /*=============================
-         ADMIN
+ ADMIN
 ===============================*/
 
 .admin_category_wrapper {

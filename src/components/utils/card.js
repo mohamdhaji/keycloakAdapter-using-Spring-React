@@ -19,6 +19,9 @@ class Card extends Component {
 
   render() {
     const props = this.props;
+    // const nameSplited= props.productName.split(" ");
+    // const productName =nameSplited[0]+" "+nameSplited[1]
+
     return (
       <div className={`card_item_wrapper ${props.grid}`}>
         <div

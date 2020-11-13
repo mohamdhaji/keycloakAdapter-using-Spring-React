@@ -5,10 +5,12 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 
 class RegisterLogin extends Component {
+  // why not component will mount ? change it .
   componentDidMount() {
     if (this.props.user.validToken) {
       this.props.history.push("/user/dashboard");
     }
+    console.log(this.props);
   }
 
   render() {
@@ -52,3 +54,4 @@ function mapStateToProps(state) {
 }
 
 export default connect(mapStateToProps)(RegisterLogin);
+// export default RegisterLogin;

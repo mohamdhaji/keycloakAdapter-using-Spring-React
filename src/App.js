@@ -12,14 +12,13 @@ import setJWTToken from "./components/securityUtils/setJWTToken";
 import { LOGIN_USER } from "./actions/types";
 import { logout } from "./actions/user_actions";
 import jwt_decode from "jwt-decode";
-
+// only executed at first time this component in rendered , also whenever you reload(refresh) the app .
 let isAuth =
   localStorage.isAuth == null
     ? false
     : localStorage.isAuth.toLowerCase() === "true";
 
 if (isAuth) {
-  console.log("App.jjjjs");
   const access_token = localStorage.accessToken;
   const decoded_jwtToken = jwt_decode(access_token);
 

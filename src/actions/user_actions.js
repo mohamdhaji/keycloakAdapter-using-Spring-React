@@ -89,6 +89,10 @@ export function addToCart(uemail, pid) {
 }
 
 export function getCartItems(uemail) {
+  // const config = {
+  //   headers: { Authorization: "Bearer " + localStorage.accessToken },
+  // };
+
   const request = axios.get(`${U_SERVER}/cart/${uemail}`).then((response) => {
     return response.data.products;
   });

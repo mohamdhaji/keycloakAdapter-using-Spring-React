@@ -16,11 +16,12 @@ class Fileupload extends Component {
   }
 
   onDrop = (files) => {
+    console.log(files[0]);
     this.setState({ uploading: true });
-    let formData = new FormData();
     const config = {
-      header: { "content-type": "multipart/form-data" },
+      headers: { "content-type": "multipart/form-data" },
     };
+    let formData = new FormData();
     formData.append("file", files[0]);
 
     axios.post("/api/uploadimage", formData, config).then((response) => {
@@ -66,6 +67,7 @@ class Fileupload extends Component {
     ));
 
   static getDerivedStateFromProps(props, state) {
+    console.log("getDerivedStateFromProps");
     if (props.reset) {
       return (state = {
         uploadedFiles: [],

@@ -3,7 +3,7 @@ import UserLayout from "../../hoc/user";
 import MyButton from "../utils/button";
 // import UserHistoryBlock from "../utils/User/history_block";
 import { connect } from "react-redux";
-import { getCartItems } from "../../actions/user_actions";
+// import { getCartItems } from "../../actions/user_actions";
 class UserDashboard extends Component {
   // componentDidMount() {
   //   this.props.dispatch(getCartItems(this.props.user.userEmail));

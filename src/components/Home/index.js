@@ -13,9 +13,11 @@ class Home extends Component {
   componentDidMount() {
     this.props.dispatch(getProductsBySell()).then(() => {});
     this.props.dispatch(getProductsByArrival());
+    console.log("bye");
   }
 
   render() {
+    console.log("hi");
     return (
       <div>
         <HomeSlider />

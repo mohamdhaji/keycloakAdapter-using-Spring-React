@@ -73,7 +73,7 @@ class ManageTypes extends Component {
         .then((response) => {
           console.log(response);
           if (response.payload.success) {
-            this.resetFieldsHandler();
+            // this.resetFieldsHandler();
           } else {
             this.setState({ formError: true });
           }
