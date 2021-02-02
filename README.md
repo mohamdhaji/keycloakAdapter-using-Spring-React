@@ -1,7 +1,7 @@
 
 # keycloak-springboot+react And docker
 
-## <span style="color: red;">DEMO</span> [YOUTUBE VIDEO](https://www.youtube.com/watch?v=4g_lcqMzzZw&feature=youtu.be).
+## DEMO [YOUTUBE VIDEO](https://www.youtube.com/watch?v=4g_lcqMzzZw&feature=youtu.be).
 This project is showing how we can integrate springboot application with Keycloak Server. Operations like creating user in kecyloak, Login a user, authenticating http api request, getting access token using credentials or refreshtoken, logout user. 
 
 ## Components Version ##
@@ -16,6 +16,7 @@ This project is showing how we can integrate springboot application with Keycloa
 * Kyecloak Server is up and running
 * Mysql Server is up and running
 * Springboot server is up and running 
+* cloudinary API configured correctly 
 
 ** dont forget to configure your keycloak configurations from localhost:8080 in my case . all keycloak configurations will be persisted in the database .
 
