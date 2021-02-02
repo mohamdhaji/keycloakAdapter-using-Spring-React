@@ -1,18 +1,23 @@
 
-# keycloak-springboot
+# keycloak-springboot+react And docker
 
-# keycloak-springboot 11
+* DEMO [GitHub Pages](https://www.youtube.com/watch?v=4g_lcqMzzZw&feature=youtu.be).
 
-This project is showing how we can integrate springboot application with Keycloak Server. Operations like creating user in kecyloak, authenticating http api request, getting access token using credentials or refreshtoken, logout user. 
+
+This project is showing how we can integrate springboot application with Keycloak Server. Operations like creating user in kecyloak, Login a user, authenticating http api request, getting access token using credentials or refreshtoken, logout user. 
 
 ## Components Version ##
 * Java 1.8
 * Maven 3.x
-* Springboot 1.5.4
-* Keycloak 3.1.0.Final
+* Springboot 2
+* Keycloak 8.0.0
+* react 16
+* redux 4
 
 ## Pre-requisities
 * Kyecloak Server is up and running
+* Mysql Server is up and running
+* Springboot server is up and running 
 
 ## Change in application.properties
 ```
