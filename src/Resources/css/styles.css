@@ -165,6 +165,7 @@ select {
 
 .form_block_two {
   display: flex;
+
 }
 .form_block_two .block {
   flex-grow: 1;
@@ -772,7 +773,7 @@ REGISTER LOGIN
 }
 
 .user_container .user_left_nav {
-  border-right: 1px solid #f8f8f8;
+  border-right: 1px solid #e0e0e0;
 }
 
 .user_container .user_left_nav .links a {
@@ -782,11 +783,18 @@ REGISTER LOGIN
   font-weight: 300;
   padding: 10px 0px;
   width: 280px;
+  /* text-align: center; */
+  margin-top: 20px;
+}
+.user_container .user_left_nav .links a:hover {
+  background-color: #424242;
+  color: #f5f5f5;
 }
 
 .user_container .user_right {
   flex-grow: 1;
   padding: 0 0 0 29px;
+  margin-left: 40px;
 }
 
 .user_container .user_nfo_panel {

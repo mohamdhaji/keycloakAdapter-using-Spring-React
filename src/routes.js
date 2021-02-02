@@ -21,14 +21,14 @@ const Routes = () => {
   return (
     <Layout>
       <Switch>
-        <Route path="/" exact component={Home} />
+        <Route path="/" exact component={Home}  />
 
         <Route path="/register_login" exact component={RegisterLogin} />
         <Route path="/register" exact component={Register} />
         <SecuredRoute path="/user/dashboard" exact component={UserDashboard} />
         <Route path="/shop" exact component={Shop} />
 
-        <SecuredRoute path="/admin/add_product" exact component={AddProduct} />
+        <SecuredRoute path="/admin/add_product" exact component={ AddProduct} />
         <SecuredRoute path="/admin/site_info" exact component={ManageSite} />
         <SecuredRoute
           path="/admin/manage_categories"

@@ -48,11 +48,17 @@ const UserLayout = (props) => {
     <div className="container">
       <div className="user_container">
         <div className="user_left_nav">
-          <h2>My account</h2>
+          <h2 style={{ textAlign: "left" }}>My account</h2>
           <div className="links">{generateLinks(links)}</div>
           {props.user.userRole === "admin" ? (
             <div>
-              <h2>Admin</h2>
+              <h2
+                style={{
+                  textAlign: "left",
+                }}
+              >
+                Admin
+              </h2>
               <div className="links">{generateLinks(admin)}</div>
             </div>
           ) : null}

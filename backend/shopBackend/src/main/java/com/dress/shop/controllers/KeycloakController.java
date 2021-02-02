@@ -59,7 +59,7 @@ public class KeycloakController {
 	 * client cookie with updated refresh and access token
 	 */
 	@RequestMapping(value = "/refreshtoken", method = RequestMethod.GET)
-	public ResponseEntity<?> getTokenUsingRefreshToken(@RequestHeader(value = "Authorization") String refreshToken,BindingResult result) {
+	public ResponseEntity<?> getTokenUsingRefreshToken(@RequestHeader(value = "Authorization") String refreshToken) {
 
 		LoginResponse responseToken = null;
 		try {

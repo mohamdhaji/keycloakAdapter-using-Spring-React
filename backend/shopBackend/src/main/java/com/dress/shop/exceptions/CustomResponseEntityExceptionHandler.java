@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
+//The ControllerAdvice is triggered by RuntimeExceptions , so thrown exceptions need to be runtime exceptions .
 @ControllerAdvice
-@RestController
 public class CustomResponseEntityExceptionHandler extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler
@@ -50,8 +50,9 @@ public class CustomResponseEntityExceptionHandler extends ResponseEntityExceptio
         return new ResponseEntity(exceptionResponse, HttpStatus.FORBIDDEN);
     }
 
-    @ExceptionHandler
-    public final ResponseEntity<Object> handleUserDoseNotExistException(UserDoseNotExistException ex, WebRequest request){
+    // it will work even without value because it will catch all other runtime exceptions that are not mentioned above
+    @ExceptionHandler(value={com.dress.shop.exceptions.UserDoseNotExistException.class})
+    public final ResponseEntity<Object> handleUserDoseNotExistException(RuntimeException ex){
         UserDoseNotExistExceptionResponse exceptionResponse = new UserDoseNotExistExceptionResponse(ex.getMessage());
         return new ResponseEntity(exceptionResponse, HttpStatus.BAD_REQUEST);
     }

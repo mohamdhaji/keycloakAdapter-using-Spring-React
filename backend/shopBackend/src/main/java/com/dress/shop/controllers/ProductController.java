@@ -3,10 +3,8 @@ package com.dress.shop.controllers;
 
 import com.dress.shop.domain.Product;
 import com.dress.shop.domain.ShopFilters;
-import com.dress.shop.services.KeyCloakService;
-import com.dress.shop.services.MapValidationErrorService;
-import com.dress.shop.services.ProductService;
-import com.dress.shop.services.TypeService;
+import com.dress.shop.services.*;
+import com.fasterxml.jackson.annotation.JsonView;
 import org.keycloak.adapters.spi.AuthOutcome;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

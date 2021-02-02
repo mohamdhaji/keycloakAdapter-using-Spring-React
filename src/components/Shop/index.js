@@ -97,6 +97,7 @@ class Shop extends Component {
 
   render() {
     const products = this.props.products;
+    console.log(products.types)
     return (
       <div>
         <PageTop title="Browse Products" />

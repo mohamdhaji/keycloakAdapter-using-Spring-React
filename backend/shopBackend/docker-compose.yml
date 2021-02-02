@@ -2,6 +2,7 @@ version: '3'
 networks:
   web:
 services:
+
   mysql:
     image: mysql:5.7
     volumes:
@@ -14,7 +15,7 @@ services:
       MYSQL_USER: keycloak
       MYSQL_PASSWORD: V6PEPhasp8
     ports:
-      - 3306:3306
+      - 3307:3306
 
   keycloak:
     image: jboss/keycloak:8.0.0
@@ -34,3 +35,13 @@ services:
       - 8080:8080
     depends_on:
       - mysql
+
+#  shop:
+#    image: shop:1.0.0
+#    ports:
+#      - 9090:9090
+#    networks:
+#      - web
+#    depends_on:
+#      - mysql
+#      - keycloak

@@ -82,7 +82,6 @@ class ProdImg extends Component {
                 {
                     this.state.lightbox ?
                         <ImageLightBox
-                            id={detail.id}
                             images={this.state.lightboxImages}
                             open={this.state.open}
                             pos={this.state.imagePos}

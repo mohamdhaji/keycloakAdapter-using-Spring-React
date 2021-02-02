@@ -23,7 +23,7 @@ public class CloudinaryService {
             CloudinaryResponse cloudinaryResponse=new CloudinaryResponse();
             File uploadedFile = convertMultiPartToFile(file);
             Map uploadResult = cloudinaryConfig.uploader().upload(uploadedFile, ObjectUtils.emptyMap());
-            System.out.println(uploadResult.get("public_id").toString());
+//            System.out.println(uploadResult.get("public_id").toString());
             cloudinaryResponse.setUrl( uploadResult.get("url").toString());
             cloudinaryResponse.setPublic_id(uploadResult.get("public_id").toString());
 

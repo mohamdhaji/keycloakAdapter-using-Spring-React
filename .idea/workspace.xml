@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="50f23f78-026b-4deb-98f5-c134d6ea2165" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/backend/shopBackend/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/shopBackend/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/shopBackend/src/main/java/com/dress/shop/controllers/KeycloakController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/shopBackend/src/main/java/com/dress/shop/controllers/KeycloakController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/shopBackend/src/main/java/com/dress/shop/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/shopBackend/src/main/java/com/dress/shop/controllers/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/shopBackend/src/main/java/com/dress/shop/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/shopBackend/src/main/java/com/dress/shop/domain/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/shopBackend/src/main/java/com/dress/shop/exceptions/CustomResponseEntityExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/shopBackend/src/main/java/com/dress/shop/exceptions/CustomResponseEntityExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/shopBackend/src/main/java/com/dress/shop/services/CloudinaryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/shopBackend/src/main/java/com/dress/shop/services/CloudinaryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/shopBackend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/shopBackend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Resources/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resources/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hoc/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hoc/user.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1k1YBOOyWm3xo155M27CTkBAMsc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="50f23f78-026b-4deb-98f5-c134d6ea2165" name="Default Changelist" comment="" />
+      <created>1604869428850</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604869428850</updated>
+    </task>
+    <servers />
+  </component>
+</project>

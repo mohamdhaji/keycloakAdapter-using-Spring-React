@@ -1,8 +1,10 @@
 package com.dress.shop.domain;
 
 
+import com.dress.shop.services.View;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonView;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
@@ -29,7 +31,6 @@ public class Product {
     private boolean available;
 
     private boolean shipping;
-
     private boolean publish;
 
     @JsonFormat(pattern = "yyyy-mm-dd")
