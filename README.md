@@ -19,10 +19,13 @@ This project is showing how we can integrate springboot application with Keycloa
 * Mysql Server is up and running
 * Springboot server is up and running 
 
+** dont forget to configure your keycloak configurations from localhost:8080 in my case . all keycloak configurations will be persisted in the database .
+
 ## Change in application.properties
 ```
-### application.properties file :
-spring.datasource.url
+application.properties file :-
+spring.datasource.url= <Replace with your mysql url and database name>
+
 keycloak.realm = <Replace with your realm name>
 keycloak.auth-server-url = http://127.0.0.1:8080/auth  <Remain same>
 keycloak.resource = service <Replace with created client name>
@@ -30,20 +33,17 @@ keycloak.resource = service <Replace with created client name>
 #replace secret with your key
 keycloak.credentials.secret =XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  <Replace with created secret key>
 keycloak.bearer-only = true
- 
-keycloak.securityConstraints[1].authRoles[0] = user
-keycloak.securityConstraints[1].securityCollections[0].name = user
-keycloak.securityConstraints[1].securityCollections[0].patterns[0] = /user/*
+cloudinary.api_key=423126184268163
+cloudinary.api_secret=oUDNz6XyhFQunCqm206itr1I13g
+
+cloudinary.cloud_name=<replace with your application name>
 
 ```
 ## Running application
 run from below from command line
 ```
-mvn spring-boot:run
+1-docker-compose up (it will run keycloak image and mysql image)
+2-run the springboot server from your editor because i didnot create docker image for it :P 
+3-npm start 
 ```
-## Test Application
-* First Create user using "/keycloak/create" rest service. Where pass user details like username,email,password, firstname, lastname etc. 
-* Now by call "/keycloak/token" with user credentials. Server validate it and give response with access_token and refresh_token. 
-* Use access token to access "user/hello" pass it in header as Authorization: bearer <access_token>
-* I am attaching postman json file also.
- ///test123
+
