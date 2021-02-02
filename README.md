@@ -18,7 +18,7 @@ This project is showing how we can integrate springboot application with Keycloa
 * Springboot server is up and running 
 * cloudinary API configured correctly 
 
-** dont forget to configure your keycloak configurations from localhost:8080 in my case . all keycloak configurations will be persisted in the database .
+NOTE: dont forget to configure your keycloak configurations from localhost:8080 in my case . all keycloak configurations will be persisted in the database .
 
 ## Change in application.properties
 ```
