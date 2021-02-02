@@ -1,5 +1,7 @@
 
-# keycloak-springboot+react And docker
+![](https://www.keycloak.org/resources/images/keycloak_logo_480x108.png)
+
+# keycloak+Springboot+React And Docker
 
 ## DEMO [YOUTUBE VIDEO](https://www.youtube.com/watch?v=4g_lcqMzzZw&feature=youtu.be).
 This project is showing how we can integrate springboot application with Keycloak Server. Operations like creating user in kecyloak, Login a user, authenticating http api request, getting access token using credentials or refreshtoken, logout user. 
