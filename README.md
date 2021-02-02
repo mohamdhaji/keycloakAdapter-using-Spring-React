@@ -1,7 +1,7 @@
 
 # keycloak-springboot+react And docker
 
-* DEMO [GitHub Pages](https://www.youtube.com/watch?v=4g_lcqMzzZw&feature=youtu.be).
+*DEMO [YOUTUBE VIDEO](https://www.youtube.com/watch?v=4g_lcqMzzZw&feature=youtu.be).
 
 
 This project is showing how we can integrate springboot application with Keycloak Server. Operations like creating user in kecyloak, Login a user, authenticating http api request, getting access token using credentials or refreshtoken, logout user. 
@@ -21,7 +21,9 @@ This project is showing how we can integrate springboot application with Keycloa
 
 ## Change in application.properties
 ```
-keycloak.realm = demo <Replace with your realm name>
+### application.properties file :
+spring.datasource.url
+keycloak.realm = <Replace with your realm name>
 keycloak.auth-server-url = http://127.0.0.1:8080/auth  <Remain same>
 keycloak.resource = service <Replace with created client name>
 
